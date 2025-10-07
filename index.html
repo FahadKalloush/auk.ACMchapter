@@ -35,11 +35,13 @@
       padding: 60px 0;
     }
 
+    /* Achievements & Projects */
     .achievement-gallery,
     .project-img {
       width: 100%;
-      border-radius: 10px;
+      height: 200px;
       object-fit: cover;
+      border-radius: 10px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -49,11 +51,34 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     }
 
+    /* Calendar */
     .calendar {
       background-color: white;
       border-radius: 10px;
       padding: 30px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Board Members */
+    #board .card-img-top {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin: 0 auto;
+      margin-top: -20px;
+      border: 4px solid white;
+    }
+
+    #board .card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding-top: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #board .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
     }
 
     footer {
@@ -83,6 +108,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#board">Board</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
           <li class="nav-item"><a class="nav-link" href="#join">Join Us</a></li>
@@ -109,71 +135,125 @@
       <h2 class="text-center mb-5">Our Achievements</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
-          <img
-            src="https://via.placeholder.com/400x200?text=Achievement+1"
-            alt="Achievement 1"
-            class="achievement-gallery"
-          />
-          <h5 class="mt-3">Hackathon Winners 2023</h5>
-          <p>Our team won first place in the regional hackathon for innovative AI solutions.</p>
+          <img src="https://via.placeholder.com/400x200?text=KCPC+3rd+Place+2021" alt="KCPC 3rd Place 2021" class="achievement-gallery">
+          <h5 class="mt-3">KCPC — 3rd Place (2021)</h5>
+          <p>Secured 3rd place at the Kuwait Collegiate Programming Contest (KCPC) in 2021.</p>
         </div>
+
         <div class="col-md-4 mb-4">
-          <img
-            src="https://via.placeholder.com/400x200?text=Achievement+2"
-            alt="Achievement 2"
-            class="achievement-gallery"
-          />
-          <h5 class="mt-3">Best Student Chapter Award</h5>
-          <p>Recognized by ACM for outstanding community engagement and events.</p>
+          <img src="https://via.placeholder.com/400x200?text=KCPC+3rd+Place+2022" alt="KCPC 3rd Place 2022" class="achievement-gallery">
+          <h5 class="mt-3">KCPC — 3rd Place (2022)</h5>
+          <p>Repeated our success with a 3rd place finish at KCPC in 2022.</p>
         </div>
+
         <div class="col-md-4 mb-4">
-          <img
-            src="https://via.placeholder.com/400x200?text=Achievement+3"
-            alt="Achievement 3"
-            class="achievement-gallery"
-          />
-          <h5 class="mt-3">Project Showcase Success</h5>
-          <p>Presented at international conferences, highlighting student-led tech projects.</p>
+          <img src="https://via.placeholder.com/400x200?text=GPC+3rd+on+Gulf" alt="Gulf Programming Contest 3rd Place" class="achievement-gallery">
+          <h5 class="mt-3">GPC — 3rd in the Gulf</h5>
+          <p>Placed 3rd overall in the Gulf Programming Contest (GPC), competing against top regional teams.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x200?text=Flag+Waving+Robots+2023" alt="Flag Waving Robots 2023" class="achievement-gallery">
+          <h5 class="mt-3">Flag-Waving Robots (2023)</h5>
+          <p>Designed and built autonomous flag-waving robots for a university theater play in 2023.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x200?text=VEX+Competition" alt="VEX Robotics Competition" class="achievement-gallery">
+          <h5 class="mt-3">VEX Robotics Competitions</h5>
+          <p>Built and competed with custom robots in VEX competitions representing our university.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x200?text=AUKCPC+Hosted" alt="Hosted AUKCPC" class="achievement-gallery">
+          <h5 class="mt-3">Hosted AUKCPC</h5>
+          <p>Organized the AUK Collegiate Programming Contest (AUKCPC) to support local competitive programming.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x200?text=ACPC+Participation" alt="ACPC Participation" class="achievement-gallery">
+          <h5 class="mt-3">ACPC Participation</h5>
+          <p>Represented AUK at the Arab Collegiate Programming Contest (ACPC), competing with regional teams.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/400x200?text=RPI+Arcade+%26+Gashapon" alt="DIY Arcade & Gashapon" class="achievement-gallery">
+          <h5 class="mt-3">DIY Arcade & 3D Gashapon</h5>
+          <p>Built a Raspberry Pi arcade machine and 3D-printed a custom gashapon (capsule) machine for events.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Board Members Section -->
+  <section id="board" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Board Members</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://via.placeholder.com/300x300?text=Member+1" class="card-img-top rounded-circle" alt="Member 1">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-1">Alice Smith</h5>
+              <p class="card-text text-muted">President</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://via.placeholder.com/300x300?text=Member+2" class="card-img-top rounded-circle" alt="Member 2">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-1">Bob Johnson</h5>
+              <p class="card-text text-muted">Vice President</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://via.placeholder.com/300x300?text=Member+3" class="card-img-top rounded-circle" alt="Member 3">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-1">Charlie Lee</h5>
+              <p class="card-text text-muted">Treasurer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://via.placeholder.com/300x300?text=Member+4" class="card-img-top rounded-circle" alt="Member 4">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-1">Dana Patel</h5>
+              <p class="card-text text-muted">Secretary</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section bg-light">
+  <section id="projects" class="section bg-white">
     <div class="container">
       <h2 class="text-center mb-5">Our Projects</h2>
       <div class="row">
         <div class="col-md-6 mb-4">
-          <img
-            src="https://via.placeholder.com/400x200?text=Project+1"
-            alt="Project 1"
-            class="project-img"
-          />
+          <img src="https://via.placeholder.com/400x200?text=Project+1" alt="Project 1" class="project-img">
           <h5 class="mt-3">AI Chatbot for Campus Services</h5>
-          <p>
-            A machine learning-based chatbot to assist students with queries on schedules,
-            events, and more.
-          </p>
+          <p>A machine learning-based chatbot to assist students with queries on schedules, events, and more.</p>
         </div>
         <div class="col-md-6 mb-4">
-          <img
-            src="https://via.placeholder.com/400x200?text=Project+2"
-            alt="Project 2"
-            class="project-img"
-          />
+          <img src="https://via.placeholder.com/400x200?text=Project+2" alt="Project 2" class="project-img">
           <h5 class="mt-3">Sustainable App for AUK</h5>
-          <p>
-            An app promoting eco-friendly practices on campus, tracking carbon footprint
-            and recycling.
-          </p>
+          <p>An app promoting eco-friendly practices on campus, tracking carbon footprint and recycling.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Events Section -->
-  <section id="events" class="section bg-white">
+  <!-- Events Calendar Section -->
+  <section id="events" class="section bg-light">
     <div class="container">
       <h2 class="text-center mb-5">Events Calendar</h2>
       <div class="calendar">
@@ -181,25 +261,17 @@
           <div class="col-md-6">
             <h5>Upcoming Events</h5>
             <ul class="list-unstyled">
-              <li class="mb-3">
-                <strong>October 13–14, 2025</strong> — Build a Card 2 (2:00–5:00 PM)
-              </li>
-              <li class="mb-3">
-                <strong>November 12, 2025</strong> — Build a Chef (2:00–3:30 PM)
-              </li>
-              <li class="mb-3">
-                <strong>November 17–18, 2025</strong> — 3D Printing Workshop
-              </li>
-              <li class="mb-3">
-                <strong>November 25, 2025</strong> — Load & Behold: Bridge Building Contest
-              </li>
+              <li class="mb-3"><strong>October 13-14, 2025</strong> - Build a Card 2, 2:00–5:00 PM</li>
+              <li class="mb-3"><strong>November 12, 2025</strong> - Build a Chef, 2:00–3:30 PM</li>
+              <li class="mb-3"><strong>November 17-18, 2025</strong> - 3D Printing Workshop</li>
+              <li class="mb-3"><strong>November 25, 2025</strong> - Load & Behold Bridge Building Contest</li>
             </ul>
           </div>
           <div class="col-md-6">
             <h5>Past Events</h5>
             <ul class="list-unstyled">
-              <li class="mb-3"><strong>September 20, 2024</strong> — Chapter Kickoff Meeting</li>
-              <li class="mb-3"><strong>October 1, 2024</strong> — Tech Trivia Night</li>
+              <li class="mb-3"><strong>September 20, 2025</strong> - Chapter Kickoff Meeting</li>
+              <li class="mb-3"><strong>October 1, 2025</strong> - Tech Trivia Night</li>
             </ul>
           </div>
         </div>
@@ -208,7 +280,7 @@
   </section>
 
   <!-- Join Us Section -->
-  <section id="join" class="section bg-light">
+  <section id="join" class="section bg-white">
     <div class="container">
       <h2 class="text-center mb-5">Join Us</h2>
       <div class="row">
@@ -220,36 +292,29 @@
             <li>Access to ACM resources and certifications</li>
             <li>Build your resume with real-world experience</li>
           </ul>
-          <p>
-            Membership is free for AUK students. Email us at
-            <a href="mailto:acm@auk.edu.kw">acm@auk.edu.kw</a> to get started.
-          </p>
+          <p>Membership is free for AUK students. Email us at acm@auk.edu.kw to get started.</p>
         </div>
         <div class="col-md-6">
-          <img
-            src="https://via.placeholder.com/400x300?text=Join+Us"
-            alt="Join Us"
-            class="img-fluid rounded"
-          />
+          <img src="https://via.placeholder.com/400x300?text=Join+Us" alt="Join Us" class="img-fluid rounded">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Enroll Section -->
-  <section id="enroll" class="section bg-white">
+  <section id="enroll" class="section bg-light">
     <div class="container">
       <h2 class="text-center mb-5">Enroll Now</h2>
       <form id="enrollForm">
         <div class="row">
           <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Full Name" required />
-            <input type="email" class="form-control" placeholder="Email Address" required />
-            <input type="text" class="form-control" placeholder="Student ID" required />
+            <input type="text" class="form-control" placeholder="Full Name" required>
+            <input type="email" class="form-control" placeholder="Email Address" required>
+            <input type="text" class="form-control" placeholder="Student ID" required>
           </div>
           <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Major" required />
-            <input type="tel" class="form-control" placeholder="Phone Number" />
+            <input type="text" class="form-control" placeholder="Major" required>
+            <input type="tel" class="form-control" placeholder="Phone Number">
             <select class="form-control" required>
               <option value="">Year of Study</option>
               <option value="freshman">Freshman</option>
@@ -260,17 +325,11 @@
           </div>
         </div>
         <div class="mb-3">
-          <textarea
-            class="form-control"
-            rows="4"
-            placeholder="Why do you want to join ACM? (Optional)"
-          ></textarea>
+          <textarea class="form-control" rows="4" placeholder="Why do you want to join ACM? (Optional)"></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-lg">Submit Enrollment</button>
       </form>
-      <p class="mt-3 text-muted">
-        We'll review your application and get back to you within 48 hours.
-      </p>
+      <p class="mt-3 text-muted">We'll review your application and get back to you within 48 hours.</p>
     </div>
   </section>
 
@@ -278,18 +337,17 @@
   <footer>
     <div class="container">
       <p>&copy; 2025 ACM Student Chapter - American University of Kuwait. All rights reserved.</p>
-      <p>Contact: <a href="mailto:acm@auk.edu.kw" class="text-light">acm@auk.edu.kw</a></p>
+      <p>Contact: acm@auk.edu.kw | Follow us on social media</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Simple form submission handler -->
   <script>
-    document.getElementById('enrollForm').addEventListener('submit', function (e) {
+    // Simple enrollment alert
+    document.getElementById('enrollForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert("Enrollment submitted! We'll contact you soon.");
+      alert('Enrollment submitted! We\'ll contact you soon.');
     });
   </script>
 </body>
